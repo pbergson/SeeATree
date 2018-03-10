@@ -13,9 +13,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    var appCoordinator: AppCoordinator?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        guard let window = window,
+            let navController = window.rootViewController as? UINavigationController else {
+                preconditionFailure("no navigation controller")
+        }
+        
+        appCoordinator = AppCoordinator(navigationController: navController)
+        
         return true
     }
 

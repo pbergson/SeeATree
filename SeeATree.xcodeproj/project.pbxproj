@@ -13,6 +13,8 @@
 		18F8BDCE205453C00080CC56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F8BDCD205453C00080CC56 /* Assets.xcassets */; };
 		18F8BDD1205453C00080CC56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F8BDCF205453C00080CC56 /* LaunchScreen.storyboard */; };
 		18F8BDDC205453C00080CC56 /* SeeATreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8BDDB205453C00080CC56 /* SeeATreeTests.swift */; };
+		18F8BDE7205456F10080CC56 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8BDE6205456F10080CC56 /* AppCoordinator.swift */; };
+		18F8BDEA205458AD0080CC56 /* SeeATree.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18F8BDE8205458AD0080CC56 /* SeeATree.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		18F8BDD7205453C00080CC56 /* SeeATreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeeATreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F8BDDB205453C00080CC56 /* SeeATreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeATreeTests.swift; sourceTree = "<group>"; };
 		18F8BDDD205453C00080CC56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F8BDE6205456F10080CC56 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		18F8BDE9205458AD0080CC56 /* SeeATree.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SeeATree.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				18F8BDCD205453C00080CC56 /* Assets.xcassets */,
 				18F8BDCF205453C00080CC56 /* LaunchScreen.storyboard */,
 				18F8BDD2205453C00080CC56 /* Info.plist */,
+				18F8BDE6205456F10080CC56 /* AppCoordinator.swift */,
+				18F8BDE8205458AD0080CC56 /* SeeATree.xcdatamodeld */,
 			);
 			path = SeeATree;
 			sourceTree = "<group>";
@@ -199,8 +205,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F8BDE7205456F10080CC56 /* AppCoordinator.swift in Sources */,
 				18F8BDC9205453C00080CC56 /* ViewController.swift in Sources */,
 				18F8BDC7205453C00080CC56 /* AppDelegate.swift in Sources */,
+				18F8BDEA205458AD0080CC56 /* SeeATree.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +452,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18F8BDE8205458AD0080CC56 /* SeeATree.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18F8BDE9205458AD0080CC56 /* SeeATree.xcdatamodel */,
+			);
+			currentVersion = 18F8BDE9205458AD0080CC56 /* SeeATree.xcdatamodel */;
+			path = SeeATree.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 18F8BDBB205453C00080CC56 /* Project object */;
 }
